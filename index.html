@@ -1,107 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-
-    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="style.css" />
 
     <title>天地自然河图</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <style id="style"></style>
 
     <div id="html"></div>
-
-    <div class="pic_position">
-        <div class="box">
-
-            <div class="side">
-                <div class="yangyáo"></div>
-                <div class="yangyáo"></div>
-                <div class="yangyáo"></div>
-                <div class="direction">纯 正<br />阳 南</div>
-                <div class="yáo_name">乾</div>
-            </div>
-
-            <div class="side">
-                <div class="yangyáo"></div>
-                <div class="yangyáo"></div>
-                <div class="yinyáo"></div>
-                <div class="direction">西 南</div>
-                <div class="yáo_name">巽</div>
-            </div>
-
-            <div class="side">
-                <div class="yinyáo"></div>
-                <div class="yangyáo"></div>
-                <div class="yinyáo"></div>
-                <div class="direction">西 正</div>
-                <div class="yáo_name">坎</div>
-            </div>
-
-            <div class="side">
-                <div class="yangyáo"></div>
-                <div class="yinyáo"></div>
-                <div class="yinyáo"></div>
-                <div class="direction">北 西</div>
-                <div class="yáo_name">艮</div>
-            </div>
-
-            <div class="side">
-                <div class="yinyáo"></div>
-                <div class="yinyáo"></div>
-                <div class="yinyáo"></div>
-                <div class="direction">纯 正<br />阴 北</div>
-                <div class="yáo_name">坤</div>
-            </div>
-
-            <div class="side">
-                <div class="yinyáo"></div>
-                <div class="yinyáo"></div>
-                <div class="yangyáo"></div>
-                <div class="direction">东 北</div>
-                <div class="yáo_name">震</div>
-            </div>
-
-            <div class="side">
-                <div class="yangyáo"></div>
-                <div class="yinyáo"></div>
-                <div class="yangyáo"></div>
-                <div class="direction">东 正</div>
-                <div class="yáo_name">离</div>
-            </div>
-
-            <div class="side">
-                <div class="yinyáo"></div>
-                <div class="yangyáo"></div>
-                <div class="yangyáo"></div>
-                <div class="direction">南 东</div>
-                <div class="yáo_name">兑</div>
-            </div>
-
-            <div class="taichi">
-                <div class="line_in_liǎngyí"></div>
-                <div class="line_in_liǎngyí"></div>
-                <div class="line_in_liǎngyí"></div>
-                <div class="line_in_liǎngyí"></div>
-                <div class="white_fish"></div>
-                <div class="black_fish"></div>
-                <div class="black_inner"></div>
-                <div class="white_inner"></div>
-            </div>
-
-
-        </div>
-
+    <div id="buttons">
+      <button id="btnPause">暂停</button>
+      <button id="btnPlay">播放</button>
+      <button id="btnSlow">慢速</button>
+      <button id="btnNormal">中速</button>
+      <button id="btnFast">快速</button>
     </div>
 
-    <script src='main.js'></script>
+    <div class="pic_position">
+      <div class="box">
+        <div class="side">
+          <div class="yangyáo"></div>
+          <div class="yangyáo"></div>
+          <div class="yangyáo"></div>
+          <div class="direction">纯 正<br />阳 南</div>
+          <div class="yáo_name">乾</div>
+        </div>
 
-</body>
+        <div class="side">
+          <div class="yangyáo"></div>
+          <div class="yangyáo"></div>
+          <div class="yinyáo"></div>
+          <div class="direction">西 南</div>
+          <div class="yáo_name">巽</div>
+        </div>
 
+        <div class="side">
+          <div class="yinyáo"></div>
+          <div class="yangyáo"></div>
+          <div class="yinyáo"></div>
+          <div class="direction">西 正</div>
+          <div class="yáo_name">坎</div>
+        </div>
+
+        <div class="side">
+          <div class="yangyáo"></div>
+          <div class="yinyáo"></div>
+          <div class="yinyáo"></div>
+          <div class="direction">北 西</div>
+          <div class="yáo_name">艮</div>
+        </div>
+
+        <div class="side">
+          <div class="yinyáo"></div>
+          <div class="yinyáo"></div>
+          <div class="yinyáo"></div>
+          <div class="direction">纯 正<br />阴 北</div>
+          <div class="yáo_name">坤</div>
+        </div>
+
+        <div class="side">
+          <div class="yinyáo"></div>
+          <div class="yinyáo"></div>
+          <div class="yangyáo"></div>
+          <div class="direction">东 北</div>
+          <div class="yáo_name">震</div>
+        </div>
+
+        <div class="side">
+          <div class="yangyáo"></div>
+          <div class="yinyáo"></div>
+          <div class="yangyáo"></div>
+          <div class="direction">东 正</div>
+          <div class="yáo_name">离</div>
+        </div>
+
+        <div class="side">
+          <div class="yinyáo"></div>
+          <div class="yangyáo"></div>
+          <div class="yangyáo"></div>
+          <div class="direction">南 东</div>
+          <div class="yáo_name">兑</div>
+        </div>
+
+        <div class="taichi">
+          <div class="line_in_liǎngyí"></div>
+          <div class="line_in_liǎngyí"></div>
+          <div class="line_in_liǎngyí"></div>
+          <div class="line_in_liǎngyí"></div>
+          <div class="white_fish"></div>
+          <div class="black_fish"></div>
+          <div class="black_inner"></div>
+          <div class="white_inner"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
