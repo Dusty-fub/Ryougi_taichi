@@ -15,7 +15,7 @@ let player = {
   intervals: {
     fast: 0,
     normal: 50,
-    slow: 150,
+    slow: 120,
   },
   init: () => {
     for (let key in player.events) {
@@ -32,6 +32,12 @@ let player = {
   play: function () {
     player.isPlay = true;
     player.step();
+    if (player.strIndex === player.stringSource.length) {
+      player.htmlPart.innerHTML = "";
+      player.stylePart.innerHTML = "";
+      player.strIndex = 0;
+      player.step();
+    }
   },
   slow: () => {
     player.duration = player.intervals["slow"];
@@ -118,56 +124,24 @@ function getStr() {
   }
   .line_in_liǎngyí:nth-child(1) {
     transform : rotate(22deg);
-    background : linear-gradient(
-    to right,
-    black 0%,
-    black 28.5%,
-    white 28.5%,
-    white 50%,
-    black 50%,
-    black 69.8%,
-    white 69.8%,
-    white 100%
-    );
+    background : linear-gradient(to right,black 0%,black 28.5%,white 28.5%,white 50%,black 50%,black 69.8%,white 69.8%,white 100%);
     z-index : 1;
     margin-left : -.15px;
   }
   .line_in_liǎngyí:nth-child(2) {
     transform : rotate(67deg);
-    background : linear-gradient(
-    to right,
-    black 0%,
-    black 50%,
-    white 50%,
-    white 100%
-    );
+    background : linear-gradient(to right,black 0%,black 50%,white 50%,white 100%);
     margin-top : -.4px;
     z-index : 1;
   }
   .line_in_liǎngyí:nth-child(3) {
     transform : rotate(112deg);
-    background : linear-gradient(
-    to right,
-    black 0%,
-    black 50%,
-    white 50%,
-    white 100%
-    );
+    background : linear-gradient(to right,black 0%,black 50%,white 50%,white 100%);
     z-index : 1;
   }
   .line_in_liǎngyí:nth-child(4) {
     transform : rotate(157deg);
-    background : linear-gradient(
-    to right,
-    white 0%,
-    white 16.8%,
-    black 16.8%,
-    black 50%,
-    white 50%,
-    white 85.6%,
-    black 85.6%,
-    black 100%
-    );
+    background : linear-gradient(to right,white 0%,white 16.8%,black 16.8%,black 50%,white 50%,white 85.6%,black 85.6%,black 100%);
     z-index : 1;
   }
   .white_inner {
@@ -223,15 +197,7 @@ function getStr() {
     box-sizing : border-box;
     height : 3px;
     width : 40px;
-    background : linear-gradient(
-    to right,
-    black 0%,
-    black 45%,
-    white 45%,
-    white 55%,
-    black 55%,
-    black 100%
-    );
+    background : linear-gradient(to right,black 0%,black 45%,white 45%,white 55%,black 55%,black 100%);
     margin : 3px;
     transform : translate(25%, 39px);
   }
