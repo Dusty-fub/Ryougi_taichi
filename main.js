@@ -215,14 +215,12 @@ function getStr() {
   }
   div.direction {
     height : 43px;
-    font-size : 40%;
     transform : translate(-2px, -20px) rotate(-180deg);
     display : flex;
     justify-content : center;
   }
   div.yáo_name {
     height : 15px;
-    font-size : 50%;
     transform : translate(-2px, -65px) rotate(-180deg);
     display : flex;
     justify-content : center;
