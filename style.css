@@ -1,12 +1,11 @@
 * {
   margin : 0;
   padding : 0;
-}
-
-* {
   box-sizing : border-box;
 }
-
+.direction, .yáo_name {
+  display : none;
+}
 .pic_position {
   width : 400px;
   height : 400px;
@@ -14,7 +13,6 @@
   right : 70px;
   top : 70px;
 }
-
 #buttons {
   position : fixed;
   right : 10px;
@@ -28,13 +26,11 @@
   border-radius : 4px;
   border : 1px solid #CCCCCC;
 }
-
 @media (max-width: 500px) {
-  #html {
+  #htmlPart {
     height : 40vh;
     overflow : auto;
   }
-
   .pic_position {
     margin-top : 6%;
     width : auto;
