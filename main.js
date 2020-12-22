@@ -72,8 +72,8 @@ let player = {
   },
 };
 
-// import "./print.css";
-player.init();
+import "./print.css";
+// player.init();
 
 function getStr() {
   return `
@@ -186,7 +186,7 @@ function getStr() {
     transform : rotate(0deg) translateY(-130px);
   }
   .side:nth-child(5) {
-    transform : rotate(180deg) translateY(-130px);
+    transform : rotate(180deg) translateY(-129px);
   }
   .side:nth-child(2) {
     transform : rotate(45deg) translateY(-130px);
