@@ -72,6 +72,7 @@ let player = {
   },
 };
 
+// import "./print.css";
 player.init();
 
 function getStr() {
@@ -87,9 +88,9 @@ function getStr() {
     width : 200px;
     height : 200px;
     box-sizing : border-box;
+    border-radius : 50%;
     border : 2px solid black;
     background : linear-gradient(112deg, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%);
-    border-radius : 50%;
     position : absolute;
   }
   .white_fish {
@@ -215,14 +216,14 @@ function getStr() {
   }
   div.direction {
     height : 43px;
-    font-size : 40%;
+    /* font-size : 40%; */
     transform : translate(-2px, -20px) rotate(-180deg);
     display : flex;
     justify-content : center;
   }
   div.yáo_name {
     height : 15px;
-    font-size : 50%;
+    /* font-size : 50%; */
     transform : translate(-2px, -65px) rotate(-180deg);
     display : flex;
     justify-content : center;

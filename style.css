@@ -33,9 +33,8 @@ body::-webkit-scrollbar {
   display : none;
 }
 #htmlPart {
-  position : relative;
   font-size : 14px;
-  left : 10px;
+  padding-left : 10px;
   overflow : hidden;
 }
 @media (max-width: 500px) {
